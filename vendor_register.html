@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Title of Web Page: Lights Out-->
+        <title>Lights Out</title>
+
+        <!--Referencing a CSS style sheet for the page-->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="hero">
+            <!--Create a registration form that sends the information to the database:-->
+            <form class = "register-form" name = "registration" action = "vendor_register.php" method = "POST">
+                <div class="form-content">
+                    <!--Title of the Page: Registration For Vendors:-->
+                    <h1 class="main-header" style="margin-top: 50px;">Registration For Vendors:</h1>
+
+                    <label for = "first_name">First Name:</label> <!--First Name:-->
+                    <input type = "text" id = "first_name" name = "first_name" placeholder = "Enter your first name" required/>
+            
+                    <label for = "last_name">Last Name:</label> <!--Last Name:-->
+                    <input type = "text" id = "last_name" name = "last_name" placeholder = "Enter your last name" required/>
+
+                    <label for = "phone_number">Phone Number</label> <!--Phone Number:-->
+                    <input type = "text" id = "phone_number" name = "phone_number" placeholder = "Enter your phone number" required/>
+
+                    <label for = "email">Email:</label> <!--Email:-->
+                    <input type = "email" id = "email" name = "email" placeholder = "Enter your email address" required/>
+
+                    <label for = "pass">Password:</label> <!--Password:-->
+                    <!--Use type = password to hide characters entered:-->
+                    <input type = "password" id = "pass" name = "pass" placeholder = "Enter a password" required/>
+
+                    <!--Button to submit the form:-->
+                    <input type = "submit" name = "submit" value = "submit" style="font-weight:bold; color:black;"/>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
